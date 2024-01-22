@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background-size: cover;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: #032D23;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 116.667% */
+    letter-spacing: -1.34px;
+}
+
+.box{
+    margin-top: 5rem;
+    max-width: 40rem;
+    min-width: 14rem;
+    max-height: 40rem;
+    min-height: 20rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (min-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+
+  @media (min-width: 900px) {
+    .box{
+      width: 40rem;
+    }
+  }
+
+
+
+.inp1{
+  border-radius: 6px;
+  border: 0.125rem solid #032D23;
+  width: 24.063rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+  padding-left: 1.063rem;
+  margin-top: 3.125rem;
+}
+
+.inp1::placeholder{
+color: #032D23;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 600;
+line-height: 2.125rem; /* 188.889% */
+letter-spacing: -0.021rem;
+opacity: 0.6;
+
+}
+
+.inp2{
+  border-radius: 6px;
+  border: 0.125rem solid #032D23;
+  width: 24.063rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+  padding-left: 1.063rem;
+  margin-top: 3.125rem;
+}
+
+.inp2::placeholder{
+  color: #032D23;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.125rem; /* 188.889% */
+  letter-spacing: -0.021rem;
+  opacity: 0.6;
+
+}
+
+@media (max-width: 768px) {
+  .inp1 {
+    margin-top: 1rem;
+    max-width: 12rem;
+    max-height: 2rem;
+  }
+  .imp1::placeholder{
+    font-size: 3px;
+  }
+  .inp2{
+    margin-top: 1rem;
+    max-width: 12rem;
+    max-height: 2rem;
+  }
+  .imp2::placeholder{
+    font-size: 0.5rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .imp1::placeholder{
+    font-size: 3px;
+  }
+
+  .imp2::placeholder{
+    font-size: 0.5rem;
+  }
+}
