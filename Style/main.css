@@ -13,28 +13,28 @@ body{
     justify-content: center;
 }
 
-h1{
-    color: #032D23;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 700;
-    line-height: 70px; /* 116.667% */
-    letter-spacing: -1.34px;
-}
+
 
 .box{
     margin-top: 5rem;
-    max-width: 40rem;
+    max-width: 25rem;
     min-width: 14rem;
     max-height: 40rem;
     min-height: 20rem;
-    background-color: #ff0505;
     display: flex;
     flex-direction: column;
+
 }
 
-
+h1{
+  color: #032D23;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 116.667% */
+  letter-spacing: -1.34px;
+}
 
 @media (min-width: 768px) {
     h1 {
@@ -139,20 +139,6 @@ letter-spacing: -0.021rem;
 
 
 
-
-
-@media (min-width: 768px) {
-
-  .imp1::placeholder{
-    font-size: 3px;
-  }
-
-  .imp2::placeholder{
-    font-size: 0.5rem;
-  }
-}
-
-
 .ch{
   display: flex;
   justify-content: space-between;
@@ -235,7 +221,24 @@ h3:hover::before, h4:hover::before{
 .but2:active,.but2:focus .img1{
   opacity: 1;
 }
+
+@media (min-width: 768px) {
+
+  .imp1::placeholder{
+    font-size: 3px;
+  }
+
+  .imp2::placeholder{
+    font-size: 0.5rem;
+  }
+}
+
+
+
 @media (max-width: 768px) {
+  .box{
+    margin-left: 4rem;
+  }
   .inp1 {
     margin-top: 1rem;
     max-width: 16rem;
